@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Doctors Available - CuraWell Hospital</title>
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous" />
+</head>
+
+<body class="bg-gradient-to-b from-green-50 to-white text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white/70 backdrop-blur-sm border-b border-slate-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-y-3">
+      <!-- Logo + Title -->
+      <div class="flex items-center gap-3">
+        <span
+          class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-cyan-50 text-cyan-700 shadow-sm ring-1 ring-cyan-100">
+          <i class="fa-solid fa-house-medical-flag text-lg"></i>
+        </span>
+        <div>
+          <div class="text-lg font-extrabold text-slate-800">CuraWell Hospital - Admin</div>
+          <div class="text-xs text-slate-500">Comprehensive Care • Trusted Caregivers</div>
+        </div>
+      </div>
+
+      <!-- Back to Dashboard -->
+      <a href="/dashboard_user.html"
+        class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded shadow-sm text-sm transition duration-200 flex items-center gap-1">
+        <i class="fas fa-arrow-left"></i> Back to Dashboard
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-6xl mx-auto px-6 py-8">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold text-green-700 flex items-center gap-2">
+        <i class="fas fa-user-md text-green-500"></i> Available Doctors
+      </h2>
+      <p class="text-slate-500 text-sm mt-1">Meet our team of trusted specialists ready to care for you.</p>
+    </div>
+
+    <!-- Doctor List -->
+    <div id="doctorList" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Loaded by JS -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-4xl mx-auto w-full px-6 py-6 text-center text-xs text-slate-500">
+    &copy; 2025 CuraWell Hospital • Compassionate Care, Trusted Expertise
+  </footer>
+
+  <script src="/env.js"></script>
+  <script type="module" src="/js/list.js"></script>
+</body>
+
+</html>
