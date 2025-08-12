@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CuraWell Hospital - User Dashboard</title>
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous" />
+</head>
+
+<body class="bg-gradient-to-b from-cyan-50 to-white text-gray-800 font-sans flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white/70 backdrop-blur-sm border-b border-slate-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-y-3">
+
+      <!-- Logo + Title -->
+      <div class="flex items-center gap-3">
+        <span
+          class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-cyan-50 text-cyan-700 shadow-sm ring-1 ring-cyan-100">
+          <i class="fa-solid fa-house-medical-flag text-lg"></i>
+        </span>
+        <div>
+          <div class="text-lg font-extrabold text-slate-800">CuraWell Hospital - User</div>
+          <div class="text-xs text-slate-500">Comprehensive Care • Trusted Caregivers</div>
+        </div>
+      </div>
+
+      <!-- User Info + Logout -->
+      <div class="flex items-center gap-4">
+        <div id="userInfo" class="text-sm text-right hidden sm:block"></div>
+        <button id="logoutBtn"
+          class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded shadow-sm text-sm transition duration-200 flex items-center gap-1">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+      <!-- View OT Schedules -->
+      <a href="/view.html"
+        class="bg-white border border-slate-100 p-6 rounded-xl shadow hover:shadow-lg transition hover:-translate-y-1 text-center">
+        <span
+          class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-purple-50 text-purple-700 mb-3 shadow-sm">
+          <i class="fas fa-calendar-alt text-2xl"></i>
+        </span>
+        <h3 class="font-semibold text-slate-800 text-lg">View OT Schedules</h3>
+        <p class="text-slate-500 text-sm mt-1">Check upcoming surgeries and plan accordingly.</p>
+      </a>
+
+      <!-- View Doctor List -->
+      <a href="/list.html"
+        class="bg-white border border-slate-100 p-6 rounded-xl shadow hover:shadow-lg transition hover:-translate-y-1 text-center">
+        <span
+          class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-green-50 text-green-700 mb-3 shadow-sm">
+          <i class="fas fa-user-md text-2xl"></i>
+        </span>
+        <h3 class="font-semibold text-slate-800 text-lg">View Doctor List</h3>
+        <p class="text-slate-500 text-sm mt-1">Find information on available doctors.</p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-4xl mx-auto w-full px-6 py-6 text-center text-xs text-slate-500 border-t">
+    &copy; 2025 CuraWell Hospital • Compassionate Care, Trusted Expertise
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/env.js"></script>
+  <script type="module" src="/js/user-dashboard.js"></script>
+  <script type="module" src="/js/logout.js"></script>
+</body>
+
+</html>
